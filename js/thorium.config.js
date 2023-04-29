@@ -8,9 +8,9 @@ const kDebugMessagesLevel= 1;
 const kHybridAppsLog = true;
 const kAutoUpdate=false;
 const kShowPreloader=false;
-const kLocalRoot = "http://localhost:8080/carbonized_red/";
+const kLocalRoot = "http://localhost:8080/autovalu/";
 const kMediaRoot = './db/dbassets/';
-const kRemoteHost="https://carbonized.red/";
+const kRemoteHost="https://autovalu.co.za/";
 const kTimeOut =6000;
 const kCrossDomain =false;
 const kAuthMode =0;
@@ -32,9 +32,9 @@ const kAddToHomeScreenIos = true;
 const kAddToHomeScreenMd = true;
 const kSkipButton=true;
 const kSkipButtonText="Skip";
-const kAddToHomeScreenTitle="Carbonized Red";
-const kAddToHomeScreenMdText="Save to desktop now";
-const kAddToHomeScreenIosText="Save to home screen now";
+const kAddToHomeScreenTitle="Autovalu";
+const kAddToHomeScreenMdText="Save to desktop now for easy access";
+const kAddToHomeScreenIosText="Save to home screen now for easy access";
 const kImgMaxSize=10;
 const kDocMaxSize=10;
 const kMultilingual=false;
@@ -119,14 +119,14 @@ if (document.location.search.indexOf('theme=') >= 0) {
     theme = document.location.search.split('theme=')[1].split('&')[0];
 }
 var app = new Framework7({
-    "version": "1.0.0",
-    "id": "com.thorium.carbonized_red",
+    "version": "0.0.1",
+    "id": "com.thorium.autovalu",
     "root": "#app",
     "theme": theme,
-    "autoDarkTheme": false,
+    "autoDarkTheme": true,
     "language": "en",
     "routes": routes,
-    "name": "Carbonized Red",
+    "name": "Autovalu",
     "initOnDeviceReady": true,
     "init": true,
     "iosTranslucentBars": true,
