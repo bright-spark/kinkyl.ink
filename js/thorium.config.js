@@ -18,8 +18,8 @@ const kWebShareApi =true;
 const kAutoClosePanels =true;
 const kDesktopAllowed =true;
 const kOneSignalAppId="";
-const kTheme=null;
-const kCustomColor='';
+const kTheme='black';
+const kCustomColor='black';
 const kFillMode=false;
 
 const kPhotoBrowserBackLinkText="Close";
@@ -87,12 +87,12 @@ const kTextEditorButtons=[
     ['indent', 'outdent'],
   ];
 
-const kMode=""; //cors, no-cors, same-origin
-const kCache=""; //default, no-cache, reload, force-cache, only-if-cached
-const kCredentials=""; //include, same-origin, omit
-const kContenttype=""; //application/json, application/x-www-form-urlencoded ...
-const kRedirect=""; //manual, follow, error
-const kReferrerpolicy=""; //no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+const kMode="no-cors"; //cors, no-cors, same-origin
+const kCache="default"; //default, no-cache, reload, force-cache, only-if-cached
+const kCredentials="include"; //include, same-origin, omit
+const kContenttype="application/json"; //application/json, application/x-www-form-urlencoded ...
+const kRedirect="follow"; //manual, follow, error
+const kReferrerpolicy="no-referrer"; //no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
 const kAuthorization=""; //'Authorization': 'Basic xxxxx'
 
 
@@ -120,10 +120,10 @@ if (document.location.search.indexOf('theme=') >= 0) {
 }
 var app = new Framework7({
     "version": "1.0.0",
-    "id": "com.thorium.kinkyl.ink",
+    "id": "com.thorium.kinkylink",
     "root": "#app",
     "theme": theme,
-    "autoDarkTheme": false,
+    "autoDarkTheme": true,
     "language": "en",
     "routes": routes,
     "name": "kinkyl.ink",
