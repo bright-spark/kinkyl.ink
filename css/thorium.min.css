@@ -1836,6 +1836,16 @@ ul:after {
   box-sizing: border-box;
 }
 
+.json-virtual-list .item-after {
+	max-width: 50%;
+}
+
+.json-virtual-list .item-after div {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
 /* -- Global Virtual list CSS--*/
 .virtual-list .item-title,
 .virtual-list .item-header,

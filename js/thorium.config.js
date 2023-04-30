@@ -7,10 +7,10 @@
 const kDebugMessagesLevel= 1;
 const kHybridAppsLog = true;
 const kAutoUpdate=false;
-const kShowPreloader=false;
+const kShowPreloader=true;
 const kLocalRoot = "http://localhost:8080/autovalu/";
 const kMediaRoot = './db/dbassets/';
-const kRemoteHost="https://autovalu.co.za/";
+const kRemoteHost="http://autovalu.co.za/";
 const kTimeOut =6000;
 const kCrossDomain =false;
 const kAuthMode =0;
@@ -18,32 +18,32 @@ const kWebShareApi =true;
 const kAutoClosePanels =true;
 const kDesktopAllowed =true;
 const kOneSignalAppId="";
-const kTheme='.color-theme-red';
-const kCustomColor=null;
+const kTheme=null;
+const kCustomColor='';
 const kFillMode=false;
 
-const kPhotoBrowserBackLinkText="close";
+const kPhotoBrowserBackLinkText="Close";
 const kPhotoBrowserTheme="dark";
-const kPhotoBrowserEffect="fade";
+const kPhotoBrowserEffect="slide";
 const kPhotoBrowserAutoPlay="";
 
-const kForceInstall = false;
+const kForceInstall = true;
 const kAddToHomeScreenIos = true;
 const kAddToHomeScreenMd = true;
 const kSkipButton=true;
 const kSkipButtonText="Skip";
-const kAddToHomeScreenTitle="Autovalu";
-const kAddToHomeScreenMdText="Save to desktop now for easy access";
-const kAddToHomeScreenIosText="Save to home screen now for easy access";
+const kAddToHomeScreenTitle="Autovalu Anywhere";
+const kAddToHomeScreenMdText="Save to desktop for easy access";
+const kAddToHomeScreenIosText="Add to home screen for easy access";
 const kImgMaxSize=10;
 const kDocMaxSize=10;
 const kMultilingual=false;
-const kDbHTMLRendering= false;
+const kDbHTMLRendering= true;
 
 /*-- Dates --*/
 const kDateFormat="mm.dd.yyyy"; //"mm.dd.yyyy";
 const kDateTimeFormat="mm.dd.yyyy hh::mm a"; //"mm.dd.yyyy hh::mm a";
-const kHours12=false;
+const kHours12=true;
 var kdayNames=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
 var kdayNamesShort=['sun','mon','tue','wed','thu','fri','sat'];
 var kmonthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -87,12 +87,12 @@ const kTextEditorButtons=[
     ['indent', 'outdent'],
   ];
 
-const kMode="no-cors"; //cors, no-cors, same-origin
-const kCache="default"; //default, no-cache, reload, force-cache, only-if-cached
-const kCredentials="omit"; //include, same-origin, omit
-const kContenttype="application/json"; //application/json, application/x-www-form-urlencoded ...
-const kRedirect="follow"; //manual, follow, error
-const kReferrerpolicy="no-referrer"; //no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+const kMode=""; //cors, no-cors, same-origin
+const kCache=""; //default, no-cache, reload, force-cache, only-if-cached
+const kCredentials=""; //include, same-origin, omit
+const kContenttype=""; //application/json, application/x-www-form-urlencoded ...
+const kRedirect=""; //manual, follow, error
+const kReferrerpolicy=""; //no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
 const kAuthorization=""; //'Authorization': 'Basic xxxxx'
 
 
@@ -119,11 +119,11 @@ if (document.location.search.indexOf('theme=') >= 0) {
     theme = document.location.search.split('theme=')[1].split('&')[0];
 }
 var app = new Framework7({
-    "version": "0.0.1",
+    "version": "1.0.0",
     "id": "com.thorium.autovalu",
     "root": "#app",
     "theme": theme,
-    "autoDarkTheme": true,
+    "autoDarkTheme": false,
     "language": "en",
     "routes": routes,
     "name": "Autovalu",
