@@ -8,7 +8,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   <script type="Module" src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
   <script nomodule src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
-  <meta name="theme-color" content="rgb(246,0,6)">
+  <meta name="theme-color" content="black">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -40,15 +40,15 @@
 	<div id="view-main" class="view view-main view-init safe-areas" data-url="/">
 		<div id="page" class="page" data-name="index">
 			<div id="page-contents-o-1004" class="page-content">
-			<div id="div-1005" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="https://carbonizedred.carrd.co">
-				<iframe id="iframe-1008" src="https://carbonizedred.carrd.co" class="embed-responsive-item"></iframe>
-			</div>
+				<div id="div-1005" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="https://spiritedpettysystemsanalysis.bright-spark.repl.co">
+					<iframe id="iframe-1008" src="https://spiritedpettysystemsanalysis.bright-spark.repl.co" class="embed-responsive-item"></iframe>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-  <!-- TEXT VIEWER -->
+<!-- TEXT VIEWER -->
 <div class="sheet-modal text-viewer-popup">
     <div class="toolbar">
         <div class="toolbar-inner">
@@ -67,7 +67,7 @@
 </div>
 
   <script type="text/javascript" src="js/framework/framework7-bundle.min.js"></script>
-    <script type="text/javascript" src="js/thorium.config.js"></script>
+  <script type="text/javascript" src="js/thorium.config.js"></script>
   <script type="text/javascript" src="js/plugins/thorium.core.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   <script src="capacitor.js"></script>
