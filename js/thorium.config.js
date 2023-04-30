@@ -8,9 +8,9 @@ const kDebugMessagesLevel= 1;
 const kHybridAppsLog = true;
 const kAutoUpdate=false;
 const kShowPreloader=true;
-const kLocalRoot = "http://localhost:8080/autovalu/";
+const kLocalRoot = "http://localhost:8080/kinkyl_ink/";
 const kMediaRoot = './db/dbassets/';
-const kRemoteHost="http://autovalu.co.za/";
+const kRemoteHost="https://kinkyl.ink/";
 const kTimeOut =6000;
 const kCrossDomain =false;
 const kAuthMode =0;
@@ -27,23 +27,23 @@ const kPhotoBrowserTheme="dark";
 const kPhotoBrowserEffect="slide";
 const kPhotoBrowserAutoPlay="";
 
-const kForceInstall = true;
-const kAddToHomeScreenIos = true;
-const kAddToHomeScreenMd = true;
-const kSkipButton=true;
-const kSkipButtonText="Skip";
-const kAddToHomeScreenTitle="Autovalu Anywhere";
-const kAddToHomeScreenMdText="Save to desktop for easy access";
-const kAddToHomeScreenIosText="Add to home screen for easy access";
+const kForceInstall = false;
+const kAddToHomeScreenIos = false;
+const kAddToHomeScreenMd = false;
+const kSkipButton=false;
+const kSkipButtonText="";
+const kAddToHomeScreenTitle="";
+const kAddToHomeScreenMdText="";
+const kAddToHomeScreenIosText="";
 const kImgMaxSize=10;
 const kDocMaxSize=10;
 const kMultilingual=false;
 const kDbHTMLRendering= true;
 
 /*-- Dates --*/
-const kDateFormat="mm.dd.yyyy"; //"mm.dd.yyyy";
-const kDateTimeFormat="mm.dd.yyyy hh::mm a"; //"mm.dd.yyyy hh::mm a";
-const kHours12=true;
+const kDateFormat="dd/mm/yyyy"; //"mm.dd.yyyy";
+const kDateTimeFormat="dd/mm/yyyy hh::mm a"; //"mm.dd.yyyy hh::mm a";
+const kHours12=false;
 var kdayNames=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
 var kdayNamesShort=['sun','mon','tue','wed','thu','fri','sat'];
 var kmonthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -120,13 +120,13 @@ if (document.location.search.indexOf('theme=') >= 0) {
 }
 var app = new Framework7({
     "version": "1.0.0",
-    "id": "com.thorium.autovalu",
+    "id": "com.thorium.kinkyl.ink",
     "root": "#app",
     "theme": theme,
     "autoDarkTheme": false,
     "language": "en",
     "routes": routes,
-    "name": "Autovalu",
+    "name": "kinkyl.ink",
     "initOnDeviceReady": true,
     "init": true,
     "iosTranslucentBars": true,
