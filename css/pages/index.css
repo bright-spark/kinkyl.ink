@@ -1,2 +1,7 @@
 /* -- custom css for file index.html -- */
 
+#playlist {
+    display: none;
+}
+
+
