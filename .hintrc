@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[allow]",
+          "iframe[allowpaymentrequest]",
+          "iframe[loading]"
+        ]
+      }
+    ]
+  }
+}
