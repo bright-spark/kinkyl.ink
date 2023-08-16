@@ -45,12 +45,12 @@
 	  <meta name="Author" content="kinkyl.ink" />
 	  <meta name="Copyright" content="Unlicence" />
 	  <meta name="Keywords" content="Audio, Music, Video, Playlist, Streaming, Online, Best, Popular, Deezer, Spotify, YouTubeMusic, YouTube, Playlist, Free, PWA, Apple, Android, iOS, Windows, Podcast, Vibescout, Event, Social" />
-	  <meta name="Subject" content="Music Love Quest" />
-	  <meta name="Description" content="Welcome to kinkyl.ink, your ultimate destination for unlimited entertainment and socializing! Our free app offers a seamless and anonymous experience for users of all ages. With no login required, you can instantly enjoy our handpicked playlists, live radio, and interactive chat features. Plus, we're excited to announce that theradio.fm now features a 100% free ChatGPT client called ZapGPT, developed by tinkerAI on the Zapier platform. Keep up with your favorite artists and radio hosts, or challenge your friends to our exciting games. And with our app directory, discovering new apps and features has never been easier! At theradio.fm, we prioritize your privacy and strive to offer a fun and engaging experience without the hassle of ads and interruptions. So why wait? Download the app now and explore all the incredible features that await you!" />
+	  <meta name="Subject" content="kinkyl.ink builder" />
+	  <meta name="Description" content="Welcome to kinkyl.ink, your ultimate PWA builder." />
 
 	  <meta property="og:url"  content="https://kinkyl.ink" />
 	  <meta property="og:type" content="website" />
-	  <meta property="og:title" content="Music Love Quest" />
+	  <meta property="og:title" content="kinkyl.ink builder" />
 	  <meta property="og:description" content="From unlikely friends to lovers for life!" />
 	  <meta property="og:image" content="https://kinkyl.ink/icons/apple-touch-icon-precomposed.png" />
 	  <meta property="og:site_name" content="kinkyl.ink" />
@@ -119,6 +119,7 @@
           <div id="navbg-o-1005" class="navbar-bg"></div>
           <div id="navbar-inner-o-1006" class="navbar-inner">
               <div id="left-o-1007" class="left">
+   <div id="playlist" class="hidden">   
 			   <a href="#" class="back link" onclick="document.getElementById('iframe-1042').src='pages/youtube.html'">
 			        <i class="icon f7-icons">arrow_clockwise</i>
 			        <span>Shuffle</span>
@@ -182,37 +183,37 @@
       <div id="tabs-o-2010" class="tabs">
           <div id="tab-0" class="page-content tab tab-active">
               <div id="div-1040" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
-                  <iframe title="tab-0" id="iframe-1040" src="" scrolling="no" class="embed-responsive-item"></iframe>
+                  <iframe title="tab-0" id="iframe-1040" src="" class="embed-responsive-item"></iframe>
               </div>
           </div>
 	  <div id="tab-1" class="page-content tab">	
               <div id="div-1041" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
-                  <iframe title="tab-1" id="iframe-1041" src="" scrolling="no" class="embed-responsive-item"></iframe>
+                  <iframe title="tab-1" id="iframe-1041" src="" class="embed-responsive-item"></iframe>
               </div>
           </div>
           <div id="tab-2" class="page-content tab">
               <div id="div-1042" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
-                  <iframe title="tab-2" id="iframe-1042" src="" scrolling="no" class="embed-responsive-item"></iframe>
+                  <iframe title="tab-2" id="iframe-1042" src="" class="embed-responsive-item"></iframe>
               </div>
           </div>
           <div id="tab-3" class="page-content tab">
               <div id="div-1043" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
-                  <iframe title="tab-3" id="iframe-1043" src="" scrolling="no" class="embed-responsive-item"></iframe>
+                  <iframe title="tab-3" id="iframe-1043" src="" class="embed-responsive-item"></iframe>
               </div>
           </div>
           <div id="tab-4" class="page-content tab">
               <div id="div-1044" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
-                  <iframe title="tab-4" id="iframe-1044" src="" scrolling="no" class="embed-responsive-item"></iframe>
+                  <iframe title="tab-4" id="iframe-1044" src="" class="embed-responsive-item"></iframe>
               </div>
           </div>
           <div id="tab-5" class="page-content tab">
               <div id="div-1045" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
-                  <iframe title="tab-5" id="iframe-1045" src="" scrolling="no" class="embed-responsive-item"></iframe>
+                  <iframe title="tab-5" id="iframe-1045" src="" class="embed-responsive-item"></iframe>
               </div>
           </div>
 	  <div id="tab-6" class="page-content tab back">	 
               <div id="div-1046" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
-                  <iframe title="tab-6" id="iframe-1046" src="" scrolling="no" class="embed-responsive-item"></iframe>
+                  <iframe title="tab-6" id="iframe-1046" src="" class="embed-responsive-item"></iframe>
               </div>
           </div>
       </div>
@@ -250,16 +251,16 @@
     <script>thoriumCorePlugin.appLoaded();</script>
 	
     <script>
-	document.addEventListener("DOMContentLoaded", () => {
-		document.getElementById("iframe-1040").src = "https://widget-ef43eb02fc2440f3b2d746ec0d9406d1.elfsig.ht";
-		document.getElementById("iframe-1041").src = "https://widget-fe032b904ba54b8e9f4138ae1ee4cad0.elfsig.ht";
-		document.getElementById("iframe-1042").src = "https://widget-bc462760cf9d47f48e803a79fd4db8d9.elfsig.ht";
-		document.getElementById("iframe-1043").src = "https://widget-e7cbccfb3eb143ebbe011baa0298aa81.elfsig.ht";
-		document.getElementById("iframe-1044").src = "https://widget-0312522ba9e04b3893d76ddf14c57604.elfsig.ht";
-		document.getElementById("iframe-1045").src = "https://widget-27144ca6055e4ee3a7810256fd2cc3f7.elfsig.ht";
-		document.getElementById("iframe-1046").src = "https://widget-e6d3ebf492ac41d1a685689a578b2567.elfsig.ht";
-	});
-   </script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("iframe-1040").src = "https://widget-ef43eb02fc2440f3b2d746ec0d9406d1.elfsig.ht";
+            document.getElementById("iframe-1041").src = "https://widget-fe032b904ba54b8e9f4138ae1ee4cad0.elfsig.ht";
+            document.getElementById("iframe-1042").src = "https://widget-bc462760cf9d47f48e803a79fd4db8d9.elfsig.ht";
+            document.getElementById("iframe-1043").src = "https://widget-e7cbccfb3eb143ebbe011baa0298aa81.elfsig.ht";
+            document.getElementById("iframe-1044").src = "https://widget-0312522ba9e04b3893d76ddf14c57604.elfsig.ht";
+            document.getElementById("iframe-1045").src = "https://widget-27144ca6055e4ee3a7810256fd2cc3f7.elfsig.ht";
+            document.getElementById("iframe-1046").src = "https://widget-e6d3ebf492ac41d1a685689a578b2567.elfsig.ht";
+        });
+    </script>
 
   </body>
 </html>

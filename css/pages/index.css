@@ -1,7 +1,36 @@
 /* -- custom css for file index.html -- */
 
+/* -- title -- */
+#title-o-1008 {
+	left: 0px;
+}
+
+body {
+  background: #202020;
+}
+
 #playlist {
-    display: none;
+  display: none;
+}
+
+#backbtn {
+  display: none;
 }
 
 
+.button {
+  border: none;
+  color: white;
+  padding: 1px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: red;}
+.button2 {background-color: blue;}
+.button3 {background-color: green;} 
+.button4 {background-color: orange;} 
