@@ -9,15 +9,6 @@ body {
   background: #202020;
 }
 
-#playlist {
-  display: none;
-}
-
-#backbtn {
-  display: none;
-}
-
-
 .button {
   border: none;
   color: white;
