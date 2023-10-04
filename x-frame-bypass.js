@@ -69,12 +69,31 @@ customElements.define('x-frame-bypass', class extends HTMLIFrameElement {
 	}
 	fetchProxy (url, options, i) {
 		const proxies = (options || {}).proxies || [
-			'https://cors-anywhere.herokuapp.com/',
-			'https://yacdn.org/proxy/',
-			'https://api.codetabs.com/v1/proxy/?quest='
-			'https://allorigins.redpopsicle.xyz/raw/?url=',
-			'https://vapor.redpopsicle.xyz/fetch/',
-			'https://proxy.redpopsicle.xyz/fetch/'
+			
+
+			'https://thing.redpopsicle.xyz/fetch/' // https://thing.redpopsicle.xyz/fetch/https://www.google.com/
+
+			//'https://cors.bridged.cc/', // https://cors.bridged.cc/https://www.google.com/
+			//'https://api.codetabs.com/v1/proxy/?quest=', // https://api.codetabs.com/v1/proxy/?quest=https://www.google.com/
+			//'https://pxy-1.redpopsicle.xyz/raw/?url=', // https://pxy-1.redpopsicle.xyz/raw/?url=https://www.google.com/
+			//'https://api.allorigins.win/raw?url=' // https://api.allorigins.win/raw?url=https://www.google.com/
+
+			
+			//'https://thing.redpopsicle.xyz/fetch/', // https://thing.redpopsicle.xyz/fetch/https://www.google.com/
+			//'https://vapor.redpopsicle.xyz/fetch/', // https://vapor.redpopsicle.xyz/fetch/https://www.google.com/
+			//'https://allorigins.redpopsicle.xyz/raw/?url=', // https://allorigins.redpopsicle.xyz/raw/?url=https://www.google.com/
+			//'https://proxy.redpopsicle.xyz/fetch/', // https://proxy.redpopsicle.xyz/fetch/https://www.google.com/
+			//'https://cors-anywhere.herokuapp.com/', // https://cors-anywhere.herokuapp.com/https://www.google.com/
+			//'https://yacdn.org/proxy/', // https://yacdn.org/proxy/https://www.google.com/
+			
+			//'https://cors-anywhere.herokuapp.com/',
+			//'https://yacdn.org/proxy/',
+			//'https://api.codetabs.com/v1/proxy/?quest='
+			//'https://thing.redpopsicle.xyz/fetch/', //	https://thing.redpopsicle.xyz/fetch/https://www.google.com/
+			//'https://vapor.redpopsicle.xyz/fetch/',
+			//'https://allorigins.redpopsicle.xyz/raw/?url='
+			//'https://proxy.redpopsicle.xyz/fetch/'
+			
 		]
 		return fetch(proxies[i] + url, options).then(res => {
 			if (!res.ok)
