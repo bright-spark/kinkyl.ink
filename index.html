@@ -94,7 +94,10 @@
   
       // Set the src attribute of the iframe
       if (targetURL) {
-	      document.getElementById("iframe-1040").src = "https://" + targetURL;
+		      document.getElementById("iframe-1040").src = "https://" + targetURL;
+		else {
+		      document.getElementById("iframe-1040").src="https://inventedinred.com";
+	      }
       };
   </script>
   
@@ -108,7 +111,7 @@
 		<div id="page" class="page" data-name="index">
 			<div id="page-contents-o-1004" class="page-content">
 			<div id="div-1005" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="./pages/red/">
-				<iframe name="embed" src="https://inventedinred.com" id="iframe-1040" class="embed-responsive-item"></iframe>
+				<iframe name="embed" id="iframe-1040" class="embed-responsive-item"></iframe>
 			</div>
 			</div>
 		</div>
