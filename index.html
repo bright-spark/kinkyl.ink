@@ -91,12 +91,15 @@
 	  const targetURL = urlObject.hostname;
 	
 	  // Set the src attribute of the iframe
-	  const iframeElement = document.getElementById("iframe-1040");
+	  document.getElementById("iframe-1040").src = "https://" + targetURL;
+		  
+	  /*const iframeElement = document.getElementById("iframe-1040");
 	  if (targetURL) {
 	    iframeElement.src = "https://" + targetURL;
 	  } else {
 	    iframeElement.src = "https://inventedinred.com";
-	  }
+	  }*/
+		  
 	</script>
   
 </head>
