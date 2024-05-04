@@ -82,25 +82,22 @@
   <link rel="stylesheet" href="css/classes.css">
   <link rel="stylesheet" href="css/custom.css">
 
-  <script>
-      // Get the current URL
-      const currentURL = window.location.href;
-      
-      // Split the URL by '/' to get the parts
-      const parts = currentURL.split('/');
-      
-      // Get the last part of the URL, which should be the target domain
-      const targetURL = parts[parts.length - 1];
-  
-      // Set the src attribute of the iframe
-      if (targetURL) {
-		      document.getElementById("iframe-1040").src = "https://" + targetURL;
-      		}
-		else {
-		      document.getElementById("iframe-1040").src="https://inventedinred.com";
-		}
-      };
-  </script>
+	  <script>
+	  // Get the current URL
+	  const currentURL = window.location.href;
+	
+	  // Extract the domain from the URL
+	  const urlObject = new URL(currentURL);
+	  const targetURL = urlObject.hostname;
+	
+	  // Set the src attribute of the iframe
+	  const iframeElement = document.getElementById("iframe-1040");
+	  if (targetURL) {
+	    iframeElement.src = "https://" + targetURL;
+	  } else {
+	    iframeElement.src = "https://inventedinred.com";
+	  }
+	</script>
   
 </head>
 
