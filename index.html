@@ -82,26 +82,6 @@
   <link rel="stylesheet" href="css/classes.css">
   <link rel="stylesheet" href="css/custom.css">
 
-	  <script>
-	  // Get the current URL
-	  const currentURL = window.location.href;
-	
-	  // Extract the domain from the URL
-	  const urlObject = new URL(currentURL);
-	  const targetURL = urlObject.hostname;
-	
-	  // Set the src attribute of the iframe
-	  document.getElementById("iframe-1040").src = "https://" + targetURL;
-		  
-	  /*const iframeElement = document.getElementById("iframe-1040");
-	  if (targetURL) {
-	    iframeElement.src = "https://" + targetURL;
-	  } else {
-	    iframeElement.src = "https://inventedinred.com";
-	  }*/
-		  
-	</script>
-  
 </head>
 
 <body class="theme-dark color-theme-red" >
@@ -118,7 +98,18 @@
 		</div>
 	</div>
 </div>
-
+	
+<script>
+	// Get the current URL
+	const currentURL = window.location.href;
+	// Split the URL by '/' to get the parts
+	const parts = currentURL.split('/');
+	// Get the last part of the URL, which should be the target domain
+	const targetURL = parts[parts.length - 1];
+	// Set the src attribute of the iframe
+	document.getElementById("iframe-1040").src = "https://" + targetURL;
+</script>
+	
 <script type="text/javascript" src="js/service-worker-register.js"></script>
 <script type="text/javascript" src="js/framework/framework7-bundle.min.js"></script>
 <script type="text/javascript" src="js/thorium.config.js"></script>
